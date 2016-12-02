@@ -316,9 +316,9 @@ module.exports = function(Chart) {
 			// Are we showing a title for the scale?
 			if (scaleLabelOpts.display && display) {
 				if (isHorizontal) {
-					minSize.height += (scaleLabelFontSize * 1.5);
+					minSize.height += (scaleLabelFontSize * 1.1);
 				} else {
-					minSize.width += (scaleLabelFontSize * 1.5);
+					minSize.width += (scaleLabelFontSize * 1.1);
 				}
 			}
 
@@ -689,7 +689,7 @@ module.exports = function(Chart) {
 							// We just make sure the multiline element is a string here..
 							context.fillText('' + label[i], 0, y);
 							// apply same lineSpacing as calculated @ L#320
-							y += (tickFontSize * 1.5);
+							y += (tickFontSize * 1.1);
 						}
 					} else {
 						context.fillText(label, 0, 0);
